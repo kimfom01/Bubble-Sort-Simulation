@@ -102,7 +102,7 @@ namespace Bubble_Sort_Simulation
                         break;
                 }
                 Drawing(n, m);
-                //Thread.Sleep(100);
+                //Thread.Sleep(100); 
             }
             Element[n1].color = Color.Black;
             Element[n2].color = Color.Black;
