@@ -1,0 +1,11 @@
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\bin\Debug\Bubble Sort Simulation.exe.config
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\bin\Debug\Bubble Sort Simulation.exe
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\bin\Debug\Bubble Sort Simulation.pdb
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.csproj.AssemblyReference.cache
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble_Sort_Simulation.Form1.resources
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble_Sort_Simulation.Properties.Resources.resources
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.csproj.GenerateResource.cache
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.csproj.CoreCompileInputs.cache
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.exe
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.pdb
+C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.csproj.SuggestedBindingRedirects.cache
