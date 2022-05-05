@@ -13,7 +13,8 @@ namespace Bubble_Sort_Simulation
 {
     public partial class Form1 : Form
     {
-        TElement[] Element = new TElement[15];
+        TElement[] Element;
+        public int size { get; set; }
         
         public Form1()
         {
@@ -30,9 +31,8 @@ namespace Bubble_Sort_Simulation
 
         void SetRandom()
         {
-            int L = Element.Length;
             Random rnd = new Random();
-            for (int i = 0; i < L - 1; i++)
+            for (int i = 0; i < size; i++)
             {
                 Element[i].x = 100;
                 Element[i].y = 20 + i * 40;
@@ -43,10 +43,9 @@ namespace Bubble_Sort_Simulation
 
         void BubbleSort()
         {
-            int L = Element.Length;
-            for (int i = 0; i < L - 1; i++)
+            for (int i = 0; i < size - 1; i++)
             {
-                for (int j = 0; j < L - i - 1; j++)
+                for (int j = 0; j < size - i - 1; j++)
                 {
                     TElement tmp;
                     if (Element[j].inf > Element[j + 1].inf)
@@ -110,9 +109,8 @@ namespace Bubble_Sort_Simulation
         void Drawing(int n, int m)
         {
             const int d = 15;
-            int L = Element.Length;
             string s;
-            SizeF size;
+            SizeF sizeF;
             Bitmap bitmap;
             bitmap = new Bitmap(ClientRectangle.Width, ClientRectangle.Height);
             Graphics gBitmap, gScreen;
@@ -120,35 +118,37 @@ namespace Bubble_Sort_Simulation
             gScreen = this.CreateGraphics();
             gBitmap.Clear(Color.White);
             Pen MyPen = new Pen(Color.Black, 1);
-            for (int i = 0; i <= L - 1; i++)
+            for (int i = 0; i <= size - 1; i++)
             {
                 MyPen.Color = Element[i].color;
                 gBitmap.DrawEllipse(MyPen, Element[i].x - d, Element[i].y - d, 2 * d, 2 * d);
                 s = Convert.ToString(Element[i].inf);
-                size = gBitmap.MeasureString(s, Font);
-                gBitmap.DrawString(s, Font, Brushes.Black, Element[i].x - size.Width / 2, Element[i].y - size.Height / 2);
+                sizeF = gBitmap.MeasureString(s, Font);
+                gBitmap.DrawString(s, Font, Brushes.Black, Element[i].x - sizeF.Width / 2, Element[i].y - sizeF.Height / 2);
             }
             if (n != -1)
             {
                 MyPen.Color = Color.Black;
                 gBitmap.DrawLine(MyPen, 120, Element[n].y, 140, Element[n].y);
                 s = "I = " + Convert.ToString(n);
-                size = gBitmap.MeasureString(s, Font);
-                gBitmap.DrawString(s, Font, Brushes.Black, 150, Element[n].y - size.Height / 2);
+                sizeF = gBitmap.MeasureString(s, Font);
+                gBitmap.DrawString(s, Font, Brushes.Black, 150, Element[n].y - sizeF.Height / 2);
             }
             if (m != -1)
             {
                 MyPen.Color = Color.Red;
                 gBitmap.DrawLine(MyPen, 120, Element[m].y, 140, Element[m].y);
                 s = "J = " + Convert.ToString(m);
-                size = gBitmap.MeasureString(s, Font);
-                gBitmap.DrawString(s, Font, Brushes.Black, 150, Element[m].y - size.Height / 2);
+                sizeF = gBitmap.MeasureString(s, Font);
+                gBitmap.DrawString(s, Font, Brushes.Black, 150, Element[m].y - sizeF.Height / 2);
             }
             gScreen.DrawImage(bitmap, ClientRectangle);
         }
 
         private void Random_Click(object sender, EventArgs e)
         {
+            size = Int32.Parse(inputBox.Text);
+            Element = new TElement[size];
             SetRandom();
             Drawing(-1, -1);
         }
