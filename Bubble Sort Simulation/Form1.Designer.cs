@@ -29,11 +29,9 @@ namespace Bubble_Sort_Simulation
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.Random = new System.Windows.Forms.Button();
             this.buttonSort = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.inputBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -67,11 +65,6 @@ namespace Bubble_Sort_Simulation
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // inputBox
             // 
             this.inputBox.Location = new System.Drawing.Point(284, 16);
@@ -100,7 +93,6 @@ namespace Bubble_Sort_Simulation
         private System.Windows.Forms.Button Random;
         private System.Windows.Forms.Button buttonSort;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox inputBox;
     }
 }
