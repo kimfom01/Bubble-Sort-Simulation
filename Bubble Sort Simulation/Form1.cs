@@ -14,8 +14,8 @@ namespace Bubble_Sort_Simulation
     public partial class Form1 : Form
     {
         TElement[] Element;
-        public int size { get; set; }
-
+        public int Size { get; set; }
+        
         public Form1()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace Bubble_Sort_Simulation
         void SetRandom()
         {
             Random rnd = new Random();
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < Size; i++)
             {
                 Element[i].x = 100;
                 Element[i].y = 20 + i * 40;
@@ -43,9 +43,9 @@ namespace Bubble_Sort_Simulation
 
         void BubbleSort()
         {
-            for (int i = 0; i < size - 1; i++)
+            for (int i = 0; i < Size - 1; i++)
             {
-                for (int j = 0; j < size - i - 1; j++)
+                for (int j = 0; j < Size - i - 1; j++)
                 {
                     TElement tmp;
                     if (Element[j].inf > Element[j + 1].inf)
@@ -118,7 +118,7 @@ namespace Bubble_Sort_Simulation
             gScreen = this.CreateGraphics();
             gBitmap.Clear(Color.White);
             Pen MyPen = new Pen(Color.Black, 1);
-            for (int i = 0; i <= size - 1; i++)
+            for (int i = 0; i <= Size - 1; i++)
             {
                 MyPen.Color = Element[i].color;
                 gBitmap.DrawEllipse(MyPen, Element[i].x - d, Element[i].y - d, 2 * d, 2 * d);
@@ -147,8 +147,8 @@ namespace Bubble_Sort_Simulation
 
         private void Random_Click(object sender, EventArgs e)
         {
-            size = Int32.Parse(inputBox.Text);
-            Element = new TElement[size];
+            Size = Int32.Parse(inputBox.Text);
+            Element = new TElement[Size];
             SetRandom();
             Drawing(-1, -1);
         }
