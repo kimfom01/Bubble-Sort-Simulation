@@ -15,7 +15,7 @@ namespace Bubble_Sort_Simulation
     {
         TElement[] Element;
         public int size { get; set; }
-        
+
         public Form1()
         {
             InitializeComponent();

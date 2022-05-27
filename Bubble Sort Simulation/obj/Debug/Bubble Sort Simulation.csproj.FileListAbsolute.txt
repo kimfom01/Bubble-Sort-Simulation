@@ -8,4 +8,3 @@ C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simul
 C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.csproj.CoreCompileInputs.cache
 C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.exe
 C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.pdb
-C:\Users\Kim\Documents\Development\Visual Studio Project Files\Bubble Sort Simulation\Bubble Sort Simulation\obj\Debug\Bubble Sort Simulation.csproj.SuggestedBindingRedirects.cache
