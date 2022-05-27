@@ -83,7 +83,7 @@ namespace Bubble_Sort_Simulation
             this.Controls.Add(this.buttonSort);
             this.Controls.Add(this.Random);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Bubble Sort Simulation";
             this.ResumeLayout(false);
             this.PerformLayout();
 
